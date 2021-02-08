@@ -7,7 +7,11 @@ module EneumannP2
 
   # Returns true for a palindrome, false otherwise.
   def palindrome?
-    processed_content == processed_content.reverse
+    if processed_content.length < 1
+      return false
+    else
+      processed_content == processed_content.reverse
+    end
   end
 
   private

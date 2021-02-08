@@ -27,5 +27,9 @@ class EneumannP2Test < Minitest::Test
   def test_integer_non_palindrome
     refute 1234.palindrome?
   end
+
+  def test_whitespace_not_palindrome
+    refute "         ".palindrome?
+  end
   
 end
